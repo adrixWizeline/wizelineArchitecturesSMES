@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="132" id="KGk-i7-Jjw" customClass="DogMVVMTableViewCell" customModule="WizelineArchitectuesSMES" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="452" height="132"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="452" height="132"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="FLr-hT-Uks">
+                        <rect key="frame" x="15" y="5" width="422" height="122"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KBz-Id-2j3">
+                                <rect key="frame" x="0.0" y="11" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KBz-Id-2j3" secondAttribute="height" multiplier="1:1" id="2LH-Jf-XbO"/>
+                                    <constraint firstAttribute="width" constant="100" id="er3-Ob-Hne"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DogName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IqK-nz-5eS">
+                                <rect key="frame" x="115" y="51" width="307" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="FLr-hT-Uks" secondAttribute="trailing" constant="15" id="5TN-p0-txd"/>
+                    <constraint firstItem="FLr-hT-Uks" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Zmx-fQ-Bjh"/>
+                    <constraint firstAttribute="bottom" secondItem="FLr-hT-Uks" secondAttribute="bottom" constant="5" id="eO2-CW-S3V"/>
+                    <constraint firstItem="FLr-hT-Uks" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="vdE-Sm-NnK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dogImageView" destination="KBz-Id-2j3" id="Zhi-iw-vTt"/>
+                <outlet property="dogNameLabel" destination="IqK-nz-5eS" id="Slx-Nc-cpF"/>
+            </connections>
+            <point key="canvasLocation" x="232.06106870229007" y="50"/>
+        </tableViewCell>
+    </objects>
+</document>

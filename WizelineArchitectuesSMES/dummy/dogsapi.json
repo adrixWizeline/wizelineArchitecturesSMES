@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Affenpinscher",
+    "imageUrl": "https://images.dog.ceo/breeds/affenpinscher/n02110627_11279.jpg"
+  },
+  {
+    "id": 2,
+    "name": "African",
+    "imageUrl": "https://images.dog.ceo/breeds/african/n02116738_5956.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Akita",
+    "imageUrl": "https://images.dog.ceo/breeds/akita/Japaneseakita.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Basenji",
+    "imageUrl": "https://images.dog.ceo/breeds/basenji/n02110806_1259.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Chow",
+    "imageUrl": "https://images.dog.ceo/breeds/chow/n02112137_7109.jpg"
+  }
+]
