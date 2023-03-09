@@ -93,7 +93,7 @@
 		99FCABEA29B9479900786CB7 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				99FCABED29B947B200786CB7 /* booksList */,
+				99FCABED29B947B200786CB7 /* dogsList */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -101,6 +101,7 @@
 		99FCABEB29B947A200786CB7 /* VIPER */ = {
 			isa = PBXGroup;
 			children = (
+				99FCAC0629BA17D500786CB7 /* dogListViper */,
 			);
 			path = VIPER;
 			sourceTree = "<group>";
@@ -112,14 +113,14 @@
 			path = CleanSwift;
 			sourceTree = "<group>";
 		};
-		99FCABED29B947B200786CB7 /* booksList */ = {
+		99FCABED29B947B200786CB7 /* dogsList */ = {
 			isa = PBXGroup;
 			children = (
 				99FCABF029B9487200786CB7 /* views */,
 				99FCABEF29B9486A00786CB7 /* viewModels */,
 				99FCABEE29B9486200786CB7 /* models */,
 			);
-			path = booksList;
+			path = dogsList;
 			sourceTree = "<group>";
 		};
 		99FCABEE29B9486200786CB7 /* models */ = {
@@ -172,6 +173,13 @@
 				99FCAC0129B9546E00786CB7 /* DogMVVMTableViewCell.xib */,
 			);
 			path = cells;
+			sourceTree = "<group>";
+		};
+		99FCAC0629BA17D500786CB7 /* dogListViper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = dogListViper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
