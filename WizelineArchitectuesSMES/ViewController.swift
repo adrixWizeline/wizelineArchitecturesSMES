@@ -36,8 +36,11 @@ class ViewController: UIViewController {
         case .mvvm:
             let vc = DogListMVVMViewController(viewModel: DogListMVVMViewModel(api: DogAPI()))
             navigationController?.pushViewController(vc, animated: true)
+        
         case .viper:
-            break
+            let vc = DogsListViperRouter.createModule()
+            navigationController?.pushViewController(vc, animated: true)
+        
         case .cleanSwift:
             break
         }
