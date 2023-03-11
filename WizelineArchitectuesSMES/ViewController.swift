@@ -10,7 +10,7 @@ import UIKit
 enum Architecture {
     case mvvm
     case viper
-    case cleanSwift
+    case vip
 }
 
 class ViewController: UIViewController {
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func goToCleanSwift(_ sender: Any) {
-        goToViewWith(architecture: .cleanSwift)
+        goToViewWith(architecture: .vip)
     }
     
     private func goToViewWith(architecture: Architecture) {
@@ -41,7 +41,9 @@ class ViewController: UIViewController {
             let vc = DogsListViperRouter.createModule()
             navigationController?.pushViewController(vc, animated: true)
         
-        case .cleanSwift:
+        case .vip:
+            let vc = ListDogsVIPViewController()
+            navigationController?.pushViewController(vc, animated: true)
             break
         }
     }

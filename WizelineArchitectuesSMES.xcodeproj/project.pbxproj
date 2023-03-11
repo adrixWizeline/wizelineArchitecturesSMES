@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99095AEF29BBC7C30024CDD9 /* ListDogsVIPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99095AED29BBC7C30024CDD9 /* ListDogsVIPViewController.swift */; };
+		99095AF029BBC7C30024CDD9 /* ListDogsVIPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99095AEE29BBC7C30024CDD9 /* ListDogsVIPViewController.xib */; };
+		99095AF229BBC7D30024CDD9 /* ListDogsVIPInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99095AF129BBC7D30024CDD9 /* ListDogsVIPInteractor.swift */; };
+		99095AF429BBC7E70024CDD9 /* ListDogsVIPPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99095AF329BBC7E70024CDD9 /* ListDogsVIPPresenter.swift */; };
+		99095AF629BBC7FE0024CDD9 /* ListDogsVIPRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99095AF529BBC7FE0024CDD9 /* ListDogsVIPRouter.swift */; };
+		99095AF829BBC8120024CDD9 /* ListDogsVIPWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99095AF729BBC8120024CDD9 /* ListDogsVIPWorker.swift */; };
+		99095AFC29BBC8B20024CDD9 /* DogDetailVIPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99095AFA29BBC8B20024CDD9 /* DogDetailVIPViewController.swift */; };
+		99095AFD29BBC8B20024CDD9 /* DogDetailVIPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99095AFB29BBC8B20024CDD9 /* DogDetailVIPViewController.xib */; };
+		99095AFF29BBC8BD0024CDD9 /* DogDetailVIPInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99095AFE29BBC8BD0024CDD9 /* DogDetailVIPInteractor.swift */; };
+		99095B0129BBC8C50024CDD9 /* DogDetailVIPPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99095B0029BBC8C50024CDD9 /* DogDetailVIPPresenter.swift */; };
+		99095B0329BBC8CF0024CDD9 /* DogDetailVIPRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99095B0229BBC8CF0024CDD9 /* DogDetailVIPRouter.swift */; };
+		99095B0529BBC8DA0024CDD9 /* DogDetailVIPWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99095B0429BBC8DA0024CDD9 /* DogDetailVIPWorker.swift */; };
+		99095B0729BBE96C0024CDD9 /* ListDogsVIPModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99095B0629BBE96C0024CDD9 /* ListDogsVIPModels.swift */; };
 		99CB846729BA1E7A004565D5 /* DogsListViperPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CB846129BA1E7A004565D5 /* DogsListViperPresenter.swift */; };
 		99CB846829BA1E7A004565D5 /* DogsListViperRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CB846229BA1E7A004565D5 /* DogsListViperRouter.swift */; };
 		99CB846929BA1E7A004565D5 /* DogsListViperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CB846329BA1E7A004565D5 /* DogsListViperViewController.swift */; };
@@ -38,6 +51,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		99095AED29BBC7C30024CDD9 /* ListDogsVIPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDogsVIPViewController.swift; sourceTree = "<group>"; };
+		99095AEE29BBC7C30024CDD9 /* ListDogsVIPViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListDogsVIPViewController.xib; sourceTree = "<group>"; };
+		99095AF129BBC7D30024CDD9 /* ListDogsVIPInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDogsVIPInteractor.swift; sourceTree = "<group>"; };
+		99095AF329BBC7E70024CDD9 /* ListDogsVIPPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDogsVIPPresenter.swift; sourceTree = "<group>"; };
+		99095AF529BBC7FE0024CDD9 /* ListDogsVIPRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDogsVIPRouter.swift; sourceTree = "<group>"; };
+		99095AF729BBC8120024CDD9 /* ListDogsVIPWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDogsVIPWorker.swift; sourceTree = "<group>"; };
+		99095AFA29BBC8B20024CDD9 /* DogDetailVIPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDetailVIPViewController.swift; sourceTree = "<group>"; };
+		99095AFB29BBC8B20024CDD9 /* DogDetailVIPViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DogDetailVIPViewController.xib; sourceTree = "<group>"; };
+		99095AFE29BBC8BD0024CDD9 /* DogDetailVIPInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDetailVIPInteractor.swift; sourceTree = "<group>"; };
+		99095B0029BBC8C50024CDD9 /* DogDetailVIPPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDetailVIPPresenter.swift; sourceTree = "<group>"; };
+		99095B0229BBC8CF0024CDD9 /* DogDetailVIPRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDetailVIPRouter.swift; sourceTree = "<group>"; };
+		99095B0429BBC8DA0024CDD9 /* DogDetailVIPWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDetailVIPWorker.swift; sourceTree = "<group>"; };
+		99095B0629BBE96C0024CDD9 /* ListDogsVIPModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDogsVIPModels.swift; sourceTree = "<group>"; };
 		99CB846129BA1E7A004565D5 /* DogsListViperPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsListViperPresenter.swift; sourceTree = "<group>"; };
 		99CB846229BA1E7A004565D5 /* DogsListViperRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsListViperRouter.swift; sourceTree = "<group>"; };
 		99CB846329BA1E7A004565D5 /* DogsListViperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsListViperViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +107,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		99095AE029BBB5560024CDD9 /* ListDogs */ = {
+			isa = PBXGroup;
+			children = (
+				99095AED29BBC7C30024CDD9 /* ListDogsVIPViewController.swift */,
+				99095AEE29BBC7C30024CDD9 /* ListDogsVIPViewController.xib */,
+				99095AF129BBC7D30024CDD9 /* ListDogsVIPInteractor.swift */,
+				99095AF329BBC7E70024CDD9 /* ListDogsVIPPresenter.swift */,
+				99095AF529BBC7FE0024CDD9 /* ListDogsVIPRouter.swift */,
+				99095AF729BBC8120024CDD9 /* ListDogsVIPWorker.swift */,
+				99095B0629BBE96C0024CDD9 /* ListDogsVIPModels.swift */,
+			);
+			path = ListDogs;
+			sourceTree = "<group>";
+		};
+		99095AF929BBC8690024CDD9 /* DogDetail */ = {
+			isa = PBXGroup;
+			children = (
+				99095AFA29BBC8B20024CDD9 /* DogDetailVIPViewController.swift */,
+				99095AFB29BBC8B20024CDD9 /* DogDetailVIPViewController.xib */,
+				99095AFE29BBC8BD0024CDD9 /* DogDetailVIPInteractor.swift */,
+				99095B0029BBC8C50024CDD9 /* DogDetailVIPPresenter.swift */,
+				99095B0229BBC8CF0024CDD9 /* DogDetailVIPRouter.swift */,
+				99095B0429BBC8DA0024CDD9 /* DogDetailVIPWorker.swift */,
+			);
+			path = DogDetail;
+			sourceTree = "<group>";
+		};
+		9993186829BBB2FF00EFBDE5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				99095AF929BBC8690024CDD9 /* DogDetail */,
+				99095AE029BBB5560024CDD9 /* ListDogs */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		99E3BA9029BA1D03002FCF53 /* dogDetailViper */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,7 +177,7 @@
 			children = (
 				99FCABFA29B94CE900786CB7 /* api */,
 				99FCABF129B94C0600786CB7 /* dummy */,
-				99FCABEC29B947A700786CB7 /* CleanSwift */,
+				99FCABEC29B947A700786CB7 /* VIP */,
 				99FCABEB29B947A200786CB7 /* VIPER */,
 				99FCABEA29B9479900786CB7 /* MVVM */,
 				99FCABD629B9459900786CB7 /* AppDelegate.swift */,
@@ -146,11 +208,12 @@
 			path = VIPER;
 			sourceTree = "<group>";
 		};
-		99FCABEC29B947A700786CB7 /* CleanSwift */ = {
+		99FCABEC29B947A700786CB7 /* VIP */ = {
 			isa = PBXGroup;
 			children = (
+				9993186829BBB2FF00EFBDE5 /* Scenes */,
 			);
-			path = CleanSwift;
+			path = VIP;
 			sourceTree = "<group>";
 		};
 		99FCABED29B947B200786CB7 /* dogsList */ = {
@@ -287,9 +350,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99095AFD29BBC8B20024CDD9 /* DogDetailVIPViewController.xib in Resources */,
 				99CB846C29BA1E7A004565D5 /* DogsListViperViewController.xib in Resources */,
 				99FCABE329B9459A00786CB7 /* LaunchScreen.storyboard in Resources */,
 				99FCABE029B9459A00786CB7 /* Assets.xcassets in Resources */,
+				99095AF029BBC7C30024CDD9 /* ListDogsVIPViewController.xib in Resources */,
 				99FCABFE29B94DAB00786CB7 /* DogListMVVMViewController.xib in Resources */,
 				99FCABDE29B9459900786CB7 /* Main.storyboard in Resources */,
 				99FCAC0329B9546E00786CB7 /* DogMVVMTableViewCell.xib in Resources */,
@@ -306,25 +371,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				99CB846829BA1E7A004565D5 /* DogsListViperRouter.swift in Sources */,
+				99095AFF29BBC8BD0024CDD9 /* DogDetailVIPInteractor.swift in Sources */,
+				99095B0129BBC8C50024CDD9 /* DogDetailVIPPresenter.swift in Sources */,
+				99095B0329BBC8CF0024CDD9 /* DogDetailVIPRouter.swift in Sources */,
 				99FCAC0229B9546E00786CB7 /* DogMVVMTableViewCell.swift in Sources */,
 				99CB846A29BA1E7A004565D5 /* DogsListViperProtocols.swift in Sources */,
 				99CB847829BA3164004565D5 /* DogDetailViperProtocols.swift in Sources */,
 				99CB847529BA3164004565D5 /* DogDetailViperPresenter.swift in Sources */,
 				99FCABDB29B9459900786CB7 /* ViewController.swift in Sources */,
+				99095B0729BBE96C0024CDD9 /* ListDogsVIPModels.swift in Sources */,
 				99CB846E29BA214D004565D5 /* DogsListViperEntities.swift in Sources */,
 				99CB846729BA1E7A004565D5 /* DogsListViperPresenter.swift in Sources */,
 				99CB847729BA3164004565D5 /* DogDetailViperViewController.swift in Sources */,
+				99095AF829BBC8120024CDD9 /* ListDogsVIPWorker.swift in Sources */,
+				99095AF629BBC7FE0024CDD9 /* ListDogsVIPRouter.swift in Sources */,
+				99095AF229BBC7D30024CDD9 /* ListDogsVIPInteractor.swift in Sources */,
 				99FCABFD29B94DAB00786CB7 /* DogListMVVMViewController.swift in Sources */,
 				99FCABD729B9459900786CB7 /* AppDelegate.swift in Sources */,
+				99095AEF29BBC7C30024CDD9 /* ListDogsVIPViewController.swift in Sources */,
 				99CB847929BA3164004565D5 /* DogDetailViperInteractor.swift in Sources */,
+				99095AFC29BBC8B20024CDD9 /* DogDetailVIPViewController.swift in Sources */,
 				99CB846929BA1E7A004565D5 /* DogsListViperViewController.swift in Sources */,
 				99FCABF529B94C5600786CB7 /* Dog.swift in Sources */,
 				99FCAC0529B9555500786CB7 /* DogMVVMCellViewModel.swift in Sources */,
+				99095AF429BBC7E70024CDD9 /* ListDogsVIPPresenter.swift in Sources */,
 				99CB847629BA3164004565D5 /* DogDetailViperRouter.swift in Sources */,
 				99CB846B29BA1E7A004565D5 /* DogsListViperInteractor.swift in Sources */,
 				99FCABD929B9459900786CB7 /* SceneDelegate.swift in Sources */,
 				99FCABF729B94C9200786CB7 /* DogListMVVMViewModel.swift in Sources */,
 				99FCABF929B94CD800786CB7 /* DogAPI.swift in Sources */,
+				99095B0529BBC8DA0024CDD9 /* DogDetailVIPWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
