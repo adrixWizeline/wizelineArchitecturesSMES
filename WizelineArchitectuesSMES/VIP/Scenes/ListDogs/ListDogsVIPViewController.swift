@@ -9,7 +9,7 @@ import UIKit
 
 protocol ListDogsDisplayLogic: AnyObject {
     func receiveStatus(status: DogListAPIStatus)
-    func displayFetcDogs(results: [ListDogs.DisplayedDogs])
+    func displayFetcDogs(results: [ListDogs.DisplayedDog])
 }
 
 final class ListDogsVIPViewController: UIViewController, ListDogsDisplayLogic {
@@ -20,7 +20,7 @@ final class ListDogsVIPViewController: UIViewController, ListDogsDisplayLogic {
     
     private var interactor: ListDogsBusinessLogic?
     private var router: ListDogsVIPRouter?
-    private var displayRecords: [ListDogs.DisplayedDogs] = []
+    private var displayRecords: [ListDogs.DisplayedDog] = []
     
     init() {
         super.init(nibName: "ListDogsVIPViewController", bundle: nil)
@@ -29,27 +29,7 @@ final class ListDogsVIPViewController: UIViewController, ListDogsDisplayLogic {
     
     //MARK: - Binding
     private func bind() {
-        let viewController = self
-        let interactor = ListDogsVIPInteractor()
-        let presenter = ListDogsVIPPresenter()
-        let router = ListDogsVIPRouter()
-        
-        viewController.router = router
-        router.view = self
-        //  ( 1 )
-        //  Router
-        //    ^ |
-        //    | v
-        //ViewController -> Interactor
-        viewController.interactor = interactor
-        
-        //  ( 2 )
-        //... -> Interactor -> Presenter
-        interactor.presenter = presenter
-        
-        //  ( 3 )
-        //... -> Interactor -> Presenter -> ViewController
-        presenter.viewController = viewController
+        //TODO: - Realiza los enlaces basados en la arquitectura VIP
     }
     
     override func viewDidLoad() {
@@ -76,10 +56,8 @@ final class ListDogsVIPViewController: UIViewController, ListDogsDisplayLogic {
         }
     }
     
-    func displayFetcDogs(results: [ListDogs.DisplayedDogs]) {
-        displayRecords = results
-        tableView.reloadData()
-    }
+    //TODO: - Implementar el protocolo faltante
+    
     
     private func setupUI() {
         tableView.register(.init(nibName: "DogMVVMTableViewCell",
@@ -97,6 +75,11 @@ final class ListDogsVIPViewController: UIViewController, ListDogsDisplayLogic {
     }
 }
 
+extension ListDogsDisplayLogic {
+    func displayFetcDogs(results: [ListDogs.DisplayedDog]) {
+    }
+}
+
 extension ListDogsVIPViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return displayRecords.count
@@ -109,5 +92,10 @@ extension ListDogsVIPViewController: UITableViewDelegate, UITableViewDataSource 
         cell.bind(vipViewModel: displayRecords[indexPath.row])
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let dog = displayRecords[indexPath.row]
+        router?.routeToDetail(dog: dog)
     }
 }

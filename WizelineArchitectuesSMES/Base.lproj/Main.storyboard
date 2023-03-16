@@ -17,26 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="NDq-KW-Qf5">
-                                <rect key="frame" x="59" y="385" width="275" height="151"/>
+                                <rect key="frame" x="59" y="443.33333333333331" width="275" height="34.333333333333314"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDd-9D-yZP">
-                                        <rect key="frame" x="0.0" y="0.0" width="275" height="34.333333333333336"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="MVVM"/>
-                                        <connections>
-                                            <action selector="goToMVVM:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A1o-kr-DPZ"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PG8-Vh-IcF">
-                                        <rect key="frame" x="0.0" y="58.333333333333314" width="275" height="34.333333333333343"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="VIPER"/>
-                                        <connections>
-                                            <action selector="goToVIPER:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jSM-BE-Q3M"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iqi-pS-OyU">
-                                        <rect key="frame" x="0.0" y="116.66666666666667" width="275" height="34.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="34.333333333333329"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Clean Swift"/>
                                         <connections>

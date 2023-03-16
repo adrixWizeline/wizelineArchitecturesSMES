@@ -8,9 +8,21 @@
 import Foundation
 
 enum ListDogs {
-    struct DisplayedDogs {
+    struct DisplayedDog {
         let name: String
         let imageUrl: String
         let date: String
     }
+}
+
+struct Dog: Codable {
+    let id: Int
+    let name: String
+    let imageUrl: String
+}
+
+enum DogListAPIStatus {
+    case loading
+    case finished(data: [Dog])
+    case error  //Never happend for this example
 }

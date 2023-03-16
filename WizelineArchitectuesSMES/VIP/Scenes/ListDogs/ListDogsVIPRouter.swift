@@ -9,13 +9,13 @@ import Foundation
 import UIKit
 
 protocol ListDogsRoutingLogic {
-    func routeToDetail(dog: Dog)
+    func routeToDetail(dog: ListDogs.DisplayedDog)
 }
 
 final class ListDogsVIPRouter: ListDogsRoutingLogic {
     weak var view: UIViewController?
     
-    func routeToDetail(dog: Dog) {
+    func routeToDetail(dog: ListDogs.DisplayedDog) {
         let vc = DogDetailVIPViewController(dog: dog)
         view?.navigationController?.pushViewController(vc, animated: true)
     }

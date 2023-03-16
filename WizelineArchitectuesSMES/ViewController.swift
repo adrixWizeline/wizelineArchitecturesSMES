@@ -19,31 +19,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func goToMVVM(_ sender: Any) {
-        goToViewWith(architecture: .mvvm)
-    }
-    
-    @IBAction func goToVIPER(_ sender: Any) {
-        goToViewWith(architecture: .viper)
-    }
-    
     @IBAction func goToCleanSwift(_ sender: Any) {
         goToViewWith(architecture: .vip)
     }
     
     private func goToViewWith(architecture: Architecture) {
         switch architecture {
-        case .mvvm:
-            let vc = DogListMVVMViewController(viewModel: DogListMVVMViewModel(api: DogAPI()))
-            navigationController?.pushViewController(vc, animated: true)
-        
-        case .viper:
-            let vc = DogsListViperRouter.createModule()
-            navigationController?.pushViewController(vc, animated: true)
-        
         case .vip:
             let vc = ListDogsVIPViewController()
             navigationController?.pushViewController(vc, animated: true)
+            
+        default:
             break
         }
     }

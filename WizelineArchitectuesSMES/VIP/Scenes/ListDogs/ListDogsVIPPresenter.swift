@@ -16,10 +16,10 @@ final class ListDogsVIPPresenter: ListDogsPresentationLogic {
     weak var viewController: ListDogsDisplayLogic?
     
     let dateFormatter: DateFormatter = {
-      let dateFormatter = DateFormatter()
-      dateFormatter.dateStyle = .short
-      dateFormatter.timeStyle = .none
-      return dateFormatter
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .short
+        dateFormatter.timeStyle = .none
+        return dateFormatter
     }()
     
     func presentFetchedDogs(response: DogListAPIStatus) {
@@ -27,7 +27,7 @@ final class ListDogsVIPPresenter: ListDogsPresentationLogic {
         viewController?.receiveStatus(status: response)
         
         //Build the data to be presented
-        var displayedDogs = [ListDogs.DisplayedDogs]()
+        var displayedDogs = [ListDogs.DisplayedDog]()
         switch response {
         case .finished(let data):
             for dog in data {
@@ -37,8 +37,9 @@ final class ListDogsVIPPresenter: ListDogsPresentationLogic {
                                            date: date))
             }
             
-            //Send the data prepared for the view
-            viewController?.displayFetcDogs(results: displayedDogs)
+            //TODO: - Envia los datos preparados a la vista.
+            
+            break
             
         default:
             break

@@ -28,7 +28,7 @@ final class DogMVVMTableViewCell: UITableViewCell {
         dateLabel.isHidden = true
     }
     
-    func bind(vipViewModel: ListDogs.DisplayedDogs) {
+    func bind(vipViewModel: ListDogs.DisplayedDog) {
         //Bind for VIP architecture demo
         dogNameLabel.text = vipViewModel.name
         dateLabel.text = vipViewModel.date

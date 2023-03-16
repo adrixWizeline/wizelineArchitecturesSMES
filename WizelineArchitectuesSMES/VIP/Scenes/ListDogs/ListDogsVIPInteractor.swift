@@ -29,7 +29,7 @@ final class ListDogsVIPInteractor: ListDogsBusinessLogic {
             //Save the data in memory
             self?.dogs = dogs
             //Notify to the Presenter the worker is finised and pass the data
-            self?.presenter?.presentFetchedDogs(response: .finished(data: dogs))
+            self?.presenter?.presentFetchedDogs(response: .finished(data: []))
         }
     }
     
