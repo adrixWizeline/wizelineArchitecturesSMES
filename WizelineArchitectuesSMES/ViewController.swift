@@ -23,14 +23,6 @@ class ViewController: UIViewController {
         goToViewWith(architecture: .mvvm)
     }
     
-    @IBAction func goToVIPER(_ sender: Any) {
-        goToViewWith(architecture: .viper)
-    }
-    
-    @IBAction func goToCleanSwift(_ sender: Any) {
-        goToViewWith(architecture: .vip)
-    }
-    
     private func goToViewWith(architecture: Architecture) {
         switch architecture {
         case .mvvm:
