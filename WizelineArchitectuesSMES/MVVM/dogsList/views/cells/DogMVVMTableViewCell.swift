@@ -28,25 +28,6 @@ final class DogMVVMTableViewCell: UITableViewCell {
         dateLabel.isHidden = true
     }
     
-    func bind(vipViewModel: ListDogs.DisplayedDogs) {
-        //Bind for VIP architecture demo
-        dogNameLabel.text = vipViewModel.name
-        dateLabel.text = vipViewModel.date
-        
-        if let url = URL(string: vipViewModel.imageUrl) {
-            //Request out of the main thread
-            DispatchQueue.global().async { [weak self] in
-                if let imageData = try? Data(contentsOf: url),
-                   let loadedImage = UIImage(data: imageData) {
-                    //Setting the image in the main thread
-                    DispatchQueue.main.async {
-                        self?.dogImageView.image = loadedImage
-                    }
-                }
-            }
-        }
-    }
-    
     //MARK: - UI
     private func updateUI() {
         dogNameLabel.text = viewModel?.dogName

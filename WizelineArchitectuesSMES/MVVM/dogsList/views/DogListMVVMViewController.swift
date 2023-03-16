@@ -15,21 +15,18 @@ final class DogListMVVMViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     //MARK: - ViewModel
-    let viewModel: DogListMVVMViewModel
+    var viewModel: DogListMVVMViewModel?
     
     //MARK: - Initializers
     init(viewModel: DogListMVVMViewModel) {
-        //Binding
-        self.viewModel = viewModel
+        //TODO: - Make the binding
         
-        super.init(nibName: "DogListMVVMViewController", bundle: nil)
-        
-        bind()
+        super.init(nibName: "DogListMVVMController", bundle: nil)
     }
     
     //MARK: - Binding
     private func bind() {
-        viewModel.loadDogsHandler = {[weak self] dogsStatus in
+        viewModel?.loadDogsHandler = {[weak self] dogsStatus in
             switch dogsStatus {
             case .loading:
                 self?.activityIndicator.isHidden = false
@@ -54,7 +51,7 @@ final class DogListMVVMViewController: UIViewController {
         setupUI()
         
         // Do any additional setup after loading the view.
-        viewModel.loadDogs()
+        viewModel?.loadDogs()
     }
     
     //MARK: - Methods
@@ -73,14 +70,14 @@ final class DogListMVVMViewController: UIViewController {
 
 extension DogListMVVMViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.source.count
+        return viewModel?.source.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: DogMVVMTableViewCell.cellIdentifier,
                                                  for: indexPath) as! DogMVVMTableViewCell
         
-        let dog = viewModel.source[indexPath.row]
+        guard let dog = viewModel?.source[indexPath.row] else { return UITableViewCell() }
         //Create the ViewModel for the cell
         cell.bind(viewModel: DogMVVMCellViewModel(dog: dog))
         

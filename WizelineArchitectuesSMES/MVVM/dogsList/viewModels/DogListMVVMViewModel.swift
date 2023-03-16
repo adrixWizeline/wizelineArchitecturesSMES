@@ -36,12 +36,8 @@ final class DogListMVVMViewModel: NSObject {
         
         //Request Data through network request or BD
         api.getDogs { [weak self] dogsResponse in
-            //It notify to the view the result of the dogs
-            //and stores the results in the viewModel for
-            //future references applying the business logic needed.
-            self?.source = dogsResponse
             
-            self?.loadDogsHandler?(.finished(data: dogsResponse))
+            self?.loadDogsHandler?(.finished(data: []))
         }
     }
 }
