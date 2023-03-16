@@ -13,7 +13,7 @@ import Foundation
 //MARK: Router -
 protocol DogsListViperRouterProtocol: AnyObject {
     //Navigate to the dog's details
-    func goToDogDetail(dog: Dog)
+    func goToDogDetail(_ dog: Dog)
 }
 
 //MARK: Presenter -
@@ -21,7 +21,7 @@ protocol DogsListViperPresenterProtocol: AnyObject {
     var source: [Dog] { get }
     
     //Handle the action of the view when user tapped a dog
-    func dogTapped(dog: Dog)
+    func dogTapped(_ dog: Dog)
     
     //Notify to the view the dogs are loaded with its status
     func didLoadDogs(status: DogListAPIStatus)

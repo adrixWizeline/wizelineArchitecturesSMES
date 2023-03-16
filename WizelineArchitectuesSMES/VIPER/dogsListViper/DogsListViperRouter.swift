@@ -29,7 +29,7 @@ final class DogsListViperRouter: DogsListViperRouterProtocol {
         return view
     }
     
-    func goToDogDetail(dog: Dog) {
+    func goToDogDetail(_ dog: Dog) {
         let dogDetailVC = DogDetailViperRouter.createModule(dog: dog)
         viewController?.navigationController?.pushViewController(dogDetailVC, animated: true)
     }

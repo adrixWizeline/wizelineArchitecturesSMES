@@ -53,7 +53,7 @@ final class DogsListViperPresenter: DogsListViperPresenterProtocol {
         view?.didLoadDogs(status: status)
     }
     
-    func dogTapped(dog: Dog) {
-        router?.goToDogDetail(dog: dog)
+    func dogTapped(_ dog: Dog) {
+        router?.goToDogDetail(dog)
     }
 }

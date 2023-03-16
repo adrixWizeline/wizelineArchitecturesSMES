@@ -84,6 +84,6 @@ extension DogsListViperViewController: UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let dogSelected = presenter?.source[indexPath.row] else { return }
-        presenter?.dogTapped(dog: dogSelected)
+        presenter?.dogTapped(dogSelected)
     }
 }
